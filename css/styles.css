@@ -73,9 +73,10 @@ footer {
   text-align: center;
 }
 
-footer h3 {
+footer h3 span{
   font-weight: 400;
   color: #F5FFFA;
+  border-bottom: 3px solid #B0E0E6;
 }
 
 footer p {
@@ -111,6 +112,10 @@ img {
 /**** Media Query Tablet ****/
 
 @media only screen and (min-width: 768px) {
+
+  a:hover {
+    color: #B0E0E6;
+  }
 
   header {
     padding: 2rem;
@@ -156,6 +161,9 @@ img {
     text-transform: uppercase;
     font-weight: 600;
     background-color: #9370db;
+    border-bottom: solid 3px #B0E0E6;
+    border-right: solid 3px #B0E0E6;
+    padding: 1rem;
   }
 
   header ul li a {
@@ -192,15 +200,17 @@ img {
   header ul  li {
     width: 50%;
     display: inline;
-    text-align: right;
-    margin: 0;
-    padding: 2rem;
+    margin: 0 1rem 0;
   }
 
   header p {
     font-weight: 600;
     padding-top: 1rem;
     display: block;
+  }
+
+  header img {
+    margin-top: 1rem;
   }
 
   section .row-1  {
