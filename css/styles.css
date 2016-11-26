@@ -4,7 +4,6 @@ body {
   text-align: center;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  margin: auto;
 }
 
 a {
@@ -49,6 +48,9 @@ header li {
 section {
   background-color: white;
   padding: 0 1rem;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block;
 }
 
 h3 {
@@ -70,6 +72,7 @@ footer {
   background-color: #4b0082;
   color: #F5FFFA;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 footer h3 span{
@@ -86,18 +89,21 @@ footer span {
   font-weight: 600;
 }
 
-#footer-info {
-  width: 50%;
-  margin: auto;
+#sub-footer {
+  padding: 2rem;
 }
 
-#back2top {
-  font-weight: 600;
-  padding: 2rem 1rem 0;
+#footer-info {
+  text-align: center;
+  width: 50%;
+  padding; 0;
+  margin: auto;
 }
 
 #tablet-desktop-footernav {
   visibility: hidden;
+  display: none;
+  overflow: hidden;
 }
 
 footer a {
@@ -115,6 +121,10 @@ img {
 /**** Media Query Tablet ****/
 
 @media only screen and (min-width: 768px) {
+
+  a {
+    padding: 1rem;
+  }
 
   a:hover {
     color: #B0E0E6;
@@ -177,42 +187,34 @@ img {
   section .col-1 {
     float: left;
     width: 48%;
-    margin: 0 0 3rem;
+    margin: 0;
     padding: 0;
+    height: auto;
+    clear: left;
   }
 
   section .col-2 {
     float: right;
     width: 48%;
-    margin: 0 0 3rem;
+    margin: 0 auto;
     padding: 0;
-  }
-
-  #back2top {
-    clear: both;
-  }
-
-  #back2top p {
-    float: left;
+    clear: right;
   }
 
   #mobile-footer {
     visibility: hidden;
+    display: none;
   }
 
   #tablet-desktop-footernav {
     visibility: visible;
-  }
-
-  #tablet-desktop-footernav ul {
-    padding-bottom: 2rem;
+    display: inline;
   }
 
   #tablet-desktop-footernav ul li {
     list-style: none;
-    display: inline-block;
+    display: inline;
     padding-left: 3rem;
-    float: right;
   }
 
 }
@@ -248,6 +250,7 @@ img {
     width: 30%;
     padding: 0 1%;
     float: left;
+    clear: none;
   }
 
   section .row-2 {
@@ -255,6 +258,11 @@ img {
     width: 30%;
     padding: 0 1%;
     float: left;
+    clear: none;
+  }
+
+  #clear-left {
+    clear: left;
   }
 
 }
