@@ -54,6 +54,7 @@ header li {
 section {
   background-color: white;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 h3 {
@@ -193,15 +194,15 @@ img {
     padding: 2rem;
   }
 
-  #row-1 {
-    display: block;
+  section .row-1  {
+    display: inline;
     width: 30%;
     padding: 0 1%;
     float: left;
   }
 
-  #row-2 {
-    display: block;
+  section .row-2 {
+    display: inline;
     width: 30%;
     padding: 0 1%;
     float: left;
