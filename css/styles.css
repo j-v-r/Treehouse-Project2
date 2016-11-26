@@ -69,7 +69,6 @@ h4 {
 footer {
   background-color: #4b0082;
   color: #F5FFFA;
-  padding: 0 0 2rem;
   text-align: center;
 }
 
@@ -94,7 +93,11 @@ footer span {
 
 #back2top {
   font-weight: 600;
-  padding: 0 2rem;
+  padding: 2rem 1rem 0;
+}
+
+#tablet-desktop-footernav {
+  visibility: hidden;
 }
 
 footer a {
@@ -183,6 +186,33 @@ img {
     width: 48%;
     margin: 0 0 3rem;
     padding: 0;
+  }
+
+  #back2top {
+    clear: both;
+  }
+
+  #back2top p {
+    float: left;
+  }
+
+  #mobile-footer {
+    visibility: hidden;
+  }
+
+  #tablet-desktop-footernav {
+    visibility: visible;
+  }
+
+  #tablet-desktop-footernav ul {
+    padding-bottom: 2rem;
+  }
+
+  #tablet-desktop-footernav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 3rem;
+    float: right;
   }
 
 }

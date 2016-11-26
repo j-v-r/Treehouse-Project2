@@ -15,8 +15,8 @@
     <h1>John Reardon</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
     <div class="col-1">
@@ -31,7 +31,7 @@
 <!-- Portfolio Section -->
   <section class="clearfix">
 
-    <h3>Portfolio</h3>
+    <h3 id="portfolio">Portfolio</h3>
 
           <div class="col-1 row-1">
           <img src="imgs/portfolio-1.png" alt="marketing page" />
@@ -76,16 +76,29 @@
   <footer class="clearfix">
 
     <div id="footer-info">
-      <h3><span>Contact</span></h3>
+      <h3 id="contact"><span>Contact</span></h3>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
       <p>Phone <span>NA</span></p>
       <p>Email <span>reard060@umn.edu</span></p>
     </div>
     <hr>
+
     <div id="back2top">
     <p style="float: left; font-size: small;">John Reardon</p>
-    <a href="#topofpage"><p style="float: right; font-size: small;">BACK TO TOP</p></a>
+
+    <div id="mobile-footer">
+      <p style="float: right; font-size: small;"><a href="#topofpage">BACK TO TOP</a></p>
+    </div>
+
+    <div id="tablet-desktop-footernav">
+      <ul>
+        <li><a href="#topofpage">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
+
   </footer>
 
 </body>
