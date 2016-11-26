@@ -13,20 +13,16 @@ a {
 /* Header */
 
 header {
-  background-color: #F5F5F5;
-  padding: 3rem;
+  background-color: #9370db;
   text-align: center;
+  color: #F5FFFA;
+  font-weight: lighter;
+  padding: 1rem;
 }
 
 header img {
   margin: 1rem 0;
   width: 70%;
-}
-
-header p {
-  padding: 0 2rem;
-  font-weight: lighter;
-  color: #808080;
 }
 
 /* Navigation */
@@ -39,7 +35,6 @@ header ul {
 
 header li {
   display: inline-block;
-  color: #000;
   padding: 8px 0;
   text-decoration: none;
   margin: 2px 0;
@@ -72,14 +67,15 @@ h4 {
 /* Footer */
 
 footer {
-  background-color: #F5F5F5;
-  color: grey;
+  background-color: #4b0082;
+  color: #F5FFFA;
   padding: 0 0 2rem;
   text-align: center;
 }
 
 footer h3 {
   font-weight: 400;
+  color: #F5FFFA;
 }
 
 footer p {
@@ -97,8 +93,11 @@ footer span {
 
 #back2top {
   font-weight: 600;
-  color: black;
   padding: 0 2rem;
+}
+
+footer a {
+  color: #F5FFFA;
 }
 
 /* General Layout */
@@ -113,6 +112,10 @@ img {
 
 @media only screen and (min-width: 768px) {
 
+  header {
+    padding: 2rem;
+  }
+
   header img {
     width: auto;
     margin: 0;
@@ -121,10 +124,8 @@ img {
 
   header p {
    text-align: justify;
-   margin: 0;
-   padding: 0 2rem 0 0;
-   font-weight: 200;
    line-height: 1.8rem;
+   padding-right: 1rem;
   }
 
 /* Header Columns */
@@ -150,14 +151,16 @@ img {
 
   header li {
     display: inline;
-    color: dimgrey;
     text-decoration: none;
     margin: 2rem;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: #F5F5F5;
+    background-color: #9370db;
   }
 
+  header ul li a {
+    color: #F5FFFA;
+  }
 /* Content Columns */
 
   section .col-1 {
@@ -192,6 +195,12 @@ img {
     text-align: right;
     margin: 0;
     padding: 2rem;
+  }
+
+  header p {
+    font-weight: 600;
+    padding-top: 1rem;
+    display: block;
   }
 
   section .row-1  {
