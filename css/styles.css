@@ -245,24 +245,13 @@ img {
     margin-top: 1rem;
   }
 
-  section .row-1  {
-    display: inline;
+  section .col-a  {
+    display: inline-block;
     width: 30%;
-    padding: 0 1%;
-    float: left;
-    clear: none;
-  }
-
-  section .row-2 {
-    display: inline;
-    width: 30%;
-    padding: 0 1%;
-    float: left;
-    clear: none;
-  }
-
-  #clear-left {
-    clear: left;
+    margin: 0 .5%;
+    padding: 0;
+    float: none;
+    vertical-align: top;
   }
 
 }
